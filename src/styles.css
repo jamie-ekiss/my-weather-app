@@ -31,6 +31,9 @@ li {
   list-style: none;
 }
 
+div {
+  text-align: center;
+}
 
 
 .weather-app {
@@ -47,6 +50,9 @@ li {
   margin: 20px auto;
   border-radius: 10px;
   max-width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .weather-icon {

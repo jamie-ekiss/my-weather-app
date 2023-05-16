@@ -4,14 +4,14 @@ body {
 
 h1 {
   color: #7c7c7c;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 100;
   line-height: 28px;
   margin: 0;
 }
 h2 {
   color: #7c7c7c;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 100;
   line-height: 28px;
   margin: 0;
@@ -35,7 +35,6 @@ div {
   text-align: center;
 }
 
-
 .weather-app {
   border: 1px solid #dadde1;
   padding: 15px;
@@ -53,6 +52,18 @@ div {
   display: flex;
   justify-content: center;
   flex-direction: row;
+}
+
+.city {
+  text-align: left;
+}
+
+.date {
+  text-align: left;
+}
+
+.descrtion {
+  text-align: left;
 }
 
 .weather-icon {

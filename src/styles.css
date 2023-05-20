@@ -47,10 +47,6 @@ footer {
   flex-direction: row;
 }
 
-.week-forcast {
-  margin-bottom: 20px;
-}
-
 .city {
   text-align: left;
 }

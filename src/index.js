@@ -1,45 +1,25 @@
 function formatDate(timestamp) {
-
   let date = new Date(timestamp);
-
   let hours = date.getHours();
-
   if (hours < 10) {
-
     hours = `0${hours}`;
-
   }
-
   let minutes = date.getMinutes();
-
   if (minutes < 10) {
-
     minutes = `0${minutes}`;
-
   }
-
- 
 
   let days = [
-
     "Sunday",
-
     "Monday",
-
     "Tuesday",
-
     "Wednesday",
-
     "Thursday",
-
     "Friday",
-
     "Saturday",
-
   ];
 
   let day = days[date.getDay()];
-
   return `${day} ${hours}:${minutes}`;
 
 }
@@ -89,13 +69,6 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
- 
-function getForecast(coordinates) {
-  let apiKey = "1db1ee83e1ea6fa25bb8f1cbcb824319";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
-  axios.get(apiUrl).then(displayForecast);
-}
- 
 
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");

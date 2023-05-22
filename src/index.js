@@ -77,8 +77,8 @@ function displayTemperature(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
-  celsiusTemperature = response.data.main.temp;
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  farenheitTemperature = response.data.main.temp;
+  temperatureElement.innerHTML = Math.round(farenheitTemperature);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;

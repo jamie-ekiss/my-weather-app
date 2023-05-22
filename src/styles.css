@@ -31,6 +31,10 @@ li {
   list-style: none;
 }
 
+li:first-letter {
+  text-transform: capitalize;
+}
+
 footer {
   text-align: center;
 }
@@ -39,12 +43,6 @@ footer {
   padding: 42px;
   border: 1px solid #dadde1;
   border-radius: 5px;
-}
-
-.weather-forcast {
-  margin-top: 20px;
-  text-align: center;
-  
 }
 
 .city {

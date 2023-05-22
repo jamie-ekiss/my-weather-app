@@ -69,6 +69,13 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "1db1ee83e1ea6fa25bb8f1cbcb824319";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+
+  axios.get(apiUrl).then(displayForecast);
+}
 
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
@@ -108,11 +115,10 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("Phoenix");
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
+search("Phoenix");
 
   
   

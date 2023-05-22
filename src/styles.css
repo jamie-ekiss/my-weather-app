@@ -39,10 +39,19 @@ footer {
   text-align: center;
 }
 
+.weather-app-wrapper {
+  max-width:600px;
+  margin: 30px auto;
+}
+
 .weather-app {
   padding: 42px;
   border: 1px solid #dadde1;
   border-radius: 5px;
+}
+
+.overview {
+  margin-bottom: 20px
 }
 
 .city {
@@ -94,8 +103,4 @@ footer {
 
 .weather-forecast-temperatures {
   font-size: 13px;
-}
-
-.search-form {
-  margin-bottom: 20px;
 }
